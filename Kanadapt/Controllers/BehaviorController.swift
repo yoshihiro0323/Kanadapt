@@ -208,16 +208,27 @@ class BehaviorController: NSObject, BehaviorDidChangeObserver, DefaultModeViewCo
 }
     
     private func changeKeyboard(mode: FKeyMode) {
-        do { try FKeyManager.setCurrentFKeyMode(mode) }
-        catch { AppErrorManager.terminateApp(withReason: error.localizedDescription) }
+        do {
+            try FKeyManager.setCurrentFKeyMode(mode)
+        } catch {
+            AppErrorManager.terminateApp(withReason: error.localizedDescription)
+        }
         
         switch mode {
         case .media:
             os_log("Switch to Apple Mode for %@", self.currentAppID)
-            self.statusMenuController.statusItem.image = AppManager.default.useLightIcon ? #imageLiteral(resourceName: "AppleMode") : #imageLiteral(resourceName: "IconAppleMode") 
+            if AppManager.default.useLightIcon {
+                statusMenuController.statusItem.button?.image = NSImage(systemSymbolName: "sun.max", accessibilityDescription: "Apple Mode (Light)")
+            } else {
+                statusMenuController.statusItem.button?.image = NSImage(systemSymbolName: "sun.max.fill", accessibilityDescription: "Apple Mode (Dark)")
+            }
         case .function:
             NSLog("Switch to Other Mode for %@", self.currentAppID)
-            self.statusMenuController.statusItem.image = AppManager.default.useLightIcon ? #imageLiteral(resourceName: "OtherMode") : #imageLiteral(resourceName: "IconOtherMode")
+            if AppManager.default.useLightIcon {
+                statusMenuController.statusItem.button?.image = NSImage(systemSymbolName: "moon", accessibilityDescription: "Other Mode (Light)")
+            } else {
+                statusMenuController.statusItem.button?.image = NSImage(systemSymbolName: "moon.fill", accessibilityDescription: "Other Mode (Dark)")
+            }
         }
         
         UserNotificationHelper.sendModeChangedTo(mode)

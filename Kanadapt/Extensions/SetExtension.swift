@@ -29,13 +29,17 @@
 
 import DefaultsWrapper
 
-extension Set: UserDefaultsConvertible where Element: UserDefaultsConvertible {
-    public func convertedObject() -> [Element.PropertyListSerializableType] {
-        self.map { $0.convertedObject() }
+struct DefaultsSet<Element: UserDefaultsConvertible & Hashable>: UserDefaultsConvertible {
+    var value: Set<Element>
+    
+    // UserDefaultsへ保存するための変換メソッド
+    func convertedObject() -> [Element.PropertyListSerializableType] {
+        return value.map { $0.convertedObject() }
     }
     
-    public static func instanciate(from object: [Element.PropertyListSerializableType]) -> Self? {
-        Set(object.compactMap(Element.instanciate(from:)))
+    // UserDefaultsからインスタンス化するためのメソッド
+    static func instanciate(from object: [Element.PropertyListSerializableType]) -> DefaultsSet? {
+        let set = Set(object.compactMap { Element.instanciate(from: $0) })
+        return DefaultsSet(value: set)
     }
 }
-

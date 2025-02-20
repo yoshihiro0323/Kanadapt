@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="fj3-CW-kly">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23504"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -8,7 +9,7 @@
         <!--Window Controller-->
         <scene sceneID="KWZ-8w-BdN">
             <objects>
-                <windowController id="fj3-CW-kly" customClass="PreferencesWindowController" customModule="Fluor" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController id="fj3-CW-kly" customClass="PreferencesWindowController" customModule="Kanadapt" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="Fluor_NewPreferencesWindowAutosaveName" animationBehavior="default" id="N9r-FQ-Oq3">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -33,7 +34,7 @@
         <!--Preferences-->
         <scene sceneID="jca-4Z-HAq">
             <objects>
-                <tabViewController title="Preferences" tabStyle="toolbar" id="glG-bk-x2Q" customClass="PreferencesTabViewController" customModule="Fluor" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController title="Preferences" tabStyle="toolbar" id="glG-bk-x2Q" customClass="PreferencesTabViewController" customModule="Kanadapt" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="General" identifier="general_tab" image="NSPreferencesGeneral" id="Hob-Dv-Dm7"/>
                         <tabViewItem label="Notifications" identifier="notification_tab" image="NSInfo" id="hM9-Ia-nxv"/>
@@ -73,8 +74,8 @@
                                 <rect key="frame" x="20" y="20" width="500" height="103"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IwQ-dZ-J8e">
-                                        <rect key="frame" x="-2" y="86" width="138" height="18"/>
-                                        <buttonCell key="cell" type="check" title="Start Fluor at login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kkr-ac-7zW">
+                                        <rect key="frame" x="-2" y="86" width="104" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Start at login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="kkr-ac-7zW">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -88,7 +89,7 @@
                                     <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="750" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0OW-8U-mev">
                                         <rect key="frame" x="0.0" y="54" width="221" height="16"/>
                                         <subviews>
-                                            <textField verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="m5w-sC-NFO">
+                                            <textField focusRingType="none" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="m5w-sC-NFO">
                                                 <rect key="frame" x="-2" y="0.0" width="148" height="16"/>
                                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default mode on launch" id="F4H-9X-Gkc">
                                                     <font key="font" metaFont="system"/>
@@ -235,7 +236,7 @@
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="gvD-8M-Fb6">
                                 <rect key="frame" x="20" y="20" width="500" height="192"/>
                                 <subviews>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uem-bV-FYl">
+                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uem-bV-FYl">
                                         <rect key="frame" x="-2" y="176" width="115" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Send notification " id="Jmi-kR-PLT">
                                             <font key="font" metaFont="systemSemibold" size="13"/>
@@ -285,7 +286,7 @@
             <objects>
                 <viewController title="Advanced" id="UoT-kw-xfb" sceneMemberID="viewController">
                     <view key="view" id="7VI-c4-LV7">
-                        <rect key="frame" x="0.0" y="0.0" width="540" height="137"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="143"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jhp-CV-4VK">
@@ -328,7 +329,7 @@
                                     <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="749" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vpe-F8-qcP">
                                         <rect key="frame" x="0.0" y="0.0" width="259" height="22"/>
                                         <subviews>
-                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2o3-xh-f7U">
+                                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2o3-xh-f7U">
                                                 <rect key="frame" x="-2" y="3" width="193" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Fn key release maximum delay:" id="sJJ-c6-Cuv">
                                                     <font key="font" metaFont="system"/>
@@ -336,7 +337,7 @@
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K1S-cD-jzx">
+                                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="K1S-cD-jzx">
                                                 <rect key="frame" x="193" y="0.0" width="66" height="22"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="66" id="j2i-pJ-NaQ"/>
@@ -406,7 +407,7 @@
             <objects>
                 <viewController title="Updates" id="dlC-Ac-YKV" sceneMemberID="viewController">
                     <view key="view" id="jGP-93-eOQ">
-                        <rect key="frame" x="0.0" y="0.0" width="540" height="114"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="117"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="250.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fy6-0l-ufy">
@@ -450,9 +451,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="500" height="20"/>
                                         <beginningViews>
                                             <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="2" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" verticalHuggingPriority="750" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRF-Ao-73C">
-                                                <rect key="frame" x="0.0" y="0.0" width="397" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="405" height="20"/>
                                                 <subviews>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oN7-9d-NkH">
+                                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oN7-9d-NkH">
                                                         <rect key="frame" x="-2" y="3" width="79" height="14"/>
                                                         <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Last Checked:" id="TZA-yl-nGe">
                                                             <font key="font" metaFont="message" size="11"/>
@@ -460,7 +461,7 @@
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Bm-jK-K96">
+                                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Bm-jK-K96">
                                                         <rect key="frame" x="75" y="3" width="102" height="14"/>
                                                         <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Yesterday at 16:28" id="tQx-sm-17A">
                                                             <dateFormatter key="formatter" dateStyle="medium" timeStyle="short" doesRelativeDateFormatting="YES" id="DX2-WR-kjA"/>
@@ -485,7 +486,7 @@
                                         </beginningViews>
                                         <endViews>
                                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azr-yA-N14">
-                                                <rect key="frame" x="399" y="-7" width="107" height="32"/>
+                                                <rect key="frame" x="406" y="-7" width="101" height="32"/>
                                                 <buttonCell key="cell" type="push" title="Check now" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vtq-y9-sm5">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -538,7 +539,7 @@
         <!--User Notification Enablement View Controller-->
         <scene sceneID="0q3-2b-oin">
             <objects>
-                <viewController storyboardIdentifier="NotificationsEnablement" id="Xyq-oP-Aha" customClass="UserNotificationEnablementViewController" customModule="Fluor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotificationsEnablement" id="Xyq-oP-Aha" customClass="UserNotificationEnablementViewController" customModule="Kanadapt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" misplaced="YES" id="O86-Ya-eHz">
                         <rect key="frame" x="0.0" y="0.0" width="442" height="150"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -566,7 +567,7 @@
                                             </binding>
                                         </connections>
                                     </box>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuT-be-oc1">
+                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuT-be-oc1">
                                         <rect key="frame" x="-2" y="114" width="408" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" title="When do you want notifications to be sent ?" id="0PF-9f-i6n">
                                             <font key="font" metaFont="systemSemibold" size="13"/>
@@ -605,7 +606,7 @@
                                                     <binding destination="Xyq-oP-Aha" name="value" keyPath="self.activeAppSwitch" id="NDC-9T-Mc8"/>
                                                 </connections>
                                             </button>
-                                            <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvX-iI-CJ9" customClass="MultilinesCheckBoxLabel" customModule="Fluor" customModuleProvider="target">
+                                            <textField focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvX-iI-CJ9" customClass="MultilinesCheckBoxLabel" customModule="Kanadapt" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="0.0" width="317" height="16"/>
                                                 <textFieldCell key="cell" allowsUndo="NO" title="When the mode changes with the active application" id="tcj-WZ-834">
                                                     <font key="font" metaFont="system"/>
@@ -640,7 +641,7 @@
                                                     <binding destination="Xyq-oP-Aha" name="value" keyPath="self.activeAppFnKey" id="91x-pf-eht"/>
                                                 </connections>
                                             </button>
-                                            <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqR-q2-1YU" customClass="MultilinesCheckBoxLabel" customModule="Fluor" customModuleProvider="target">
+                                            <textField focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqR-q2-1YU" customClass="MultilinesCheckBoxLabel" customModule="Kanadapt" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="0.0" width="390" height="16"/>
                                                 <textFieldCell key="cell" allowsUndo="NO" title="When the current application mode is set by pressing the fn key" id="ezd-7Z-VvY">
                                                     <font key="font" metaFont="system"/>
@@ -675,7 +676,7 @@
                                                     <binding destination="Xyq-oP-Aha" name="value" keyPath="self.globalFnKey" id="Frh-j1-geL"/>
                                                 </connections>
                                             </button>
-                                            <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iHb-uc-1ZM" customClass="MultilinesCheckBoxLabel" customModule="Fluor" customModuleProvider="target">
+                                            <textField focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iHb-uc-1ZM" customClass="MultilinesCheckBoxLabel" customModule="Kanadapt" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="0.0" width="313" height="16"/>
                                                 <textFieldCell key="cell" allowsUndo="NO" title="When the global mode is set by pressing the fn key" id="fT0-a8-Fn0">
                                                     <font key="font" metaFont="system"/>
@@ -758,7 +759,7 @@
             <objects>
                 <viewController storyboardIdentifier="DebugAuthorization" id="kDW-fa-EAS" sceneMemberID="viewController">
                     <view key="view" id="syX-NU-iua">
-                        <rect key="frame" x="0.0" y="0.0" width="355" height="107"/>
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="109"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="WNM-nQ-Mtz">
@@ -780,7 +781,7 @@
                                             </columns>
                                             <gridCells>
                                                 <gridCell row="W3h-VG-AIC" column="hLT-Pq-VZy" id="bBE-rI-Qu1">
-                                                    <textField key="contentView" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AGD-wB-f1e">
+                                                    <textField key="contentView" focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AGD-wB-f1e">
                                                         <rect key="frame" x="4" y="51" width="14" height="16"/>
                                                         <textFieldCell key="cell" lineBreakMode="clipping" title="1." id="mjv-jW-mRK">
                                                             <font key="font" usesAppearanceFont="YES"/>
@@ -790,7 +791,7 @@
                                                     </textField>
                                                 </gridCell>
                                                 <gridCell row="W3h-VG-AIC" column="cS3-dY-qCY" id="w2B-hy-49t">
-                                                    <button key="contentView" horizontalHuggingPriority="751" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ipt-yA-Hpc" customClass="LinkButton" customModule="Fluor" customModuleProvider="target">
+                                                    <button key="contentView" horizontalHuggingPriority="751" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ipt-yA-Hpc" customClass="LinkButton" customModule="Kanadapt" customModuleProvider="target">
                                                         <rect key="frame" x="24" y="51" width="220" height="16"/>
                                                         <buttonCell key="cell" type="bevel" title="Open Notifications preference pane" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="caw-E4-tuY">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -802,7 +803,7 @@
                                                     </button>
                                                 </gridCell>
                                                 <gridCell row="mcm-0X-aet" column="hLT-Pq-VZy" id="rxn-WW-ir8">
-                                                    <textField key="contentView" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Oqh-g1-AyR">
+                                                    <textField key="contentView" focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Oqh-g1-AyR">
                                                         <rect key="frame" x="2" y="26" width="16" height="16"/>
                                                         <textFieldCell key="cell" lineBreakMode="clipping" title="2." id="lXR-Ye-zzj">
                                                             <font key="font" usesAppearanceFont="YES"/>
@@ -812,7 +813,7 @@
                                                     </textField>
                                                 </gridCell>
                                                 <gridCell row="mcm-0X-aet" column="cS3-dY-qCY" id="Pmy-bl-dI3">
-                                                    <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BBL-89-YiJ">
+                                                    <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BBL-89-YiJ">
                                                         <rect key="frame" x="22" y="26" width="293" height="16"/>
                                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Find and select Fluor in the list" id="IKU-zN-gyv">
                                                             <font key="font" usesAppearanceFont="YES"/>
@@ -822,7 +823,7 @@
                                                     </textField>
                                                 </gridCell>
                                                 <gridCell row="XHy-gU-rWN" column="hLT-Pq-VZy" id="QHZ-ag-opT">
-                                                    <textField key="contentView" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LL1-Ld-nlt">
+                                                    <textField key="contentView" focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LL1-Ld-nlt">
                                                         <rect key="frame" x="2" y="1" width="16" height="16"/>
                                                         <textFieldCell key="cell" lineBreakMode="clipping" title="3." id="Cvg-Yl-ZC5">
                                                             <font key="font" usesAppearanceFont="YES"/>
@@ -832,7 +833,7 @@
                                                     </textField>
                                                 </gridCell>
                                                 <gridCell row="XHy-gU-rWN" column="cS3-dY-qCY" id="79L-iU-5Ao">
-                                                    <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8nb-EH-fYQ">
+                                                    <textField key="contentView" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8nb-EH-fYQ">
                                                         <rect key="frame" x="22" y="1" width="293" height="16"/>
                                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Activate the Allow Notification from Fluor switch" id="hv4-f4-B7v">
                                                             <font key="font" usesAppearanceFont="YES"/>

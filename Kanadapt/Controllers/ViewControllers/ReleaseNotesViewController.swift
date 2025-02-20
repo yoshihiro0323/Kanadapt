@@ -28,7 +28,7 @@
 
 
 import Cocoa
-import WebKit
+@preconcurrency import WebKit
 
 class ReleaseNotesViewController: NSViewController, WKNavigationDelegate {
     @IBOutlet weak var webView: WKWebView!

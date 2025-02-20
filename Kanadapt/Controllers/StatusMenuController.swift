@@ -94,11 +94,14 @@ class StatusMenuController: NSObject, NSMenuDelegate, NSWindowDelegate, MenuCont
     private func adaptStatusMenuIcon() {
         let disabledApp = AppManager.default.isDisabled
         let usesLightIcon = AppManager.default.useLightIcon
-        switch (disabledApp, usesLightIcon) {
-        case (false, false): statusItem.image = #imageLiteral(resourceName: "IconAppleMode")
-        case (false, true): statusItem.image = #imageLiteral(resourceName: "AppleMode")
-        case (true, false): statusItem.image = #imageLiteral(resourceName: "IconDisabled")
-        case (true, true): statusItem.image = #imageLiteral(resourceName: "LighIconDisabled")
+        if !disabledApp && !usesLightIcon {
+            statusItem.button?.image = NSImage(systemSymbolName: "star.fill", accessibilityDescription: "Enabled (Dark)")
+        } else if !disabledApp && usesLightIcon {
+            statusItem.button?.image = NSImage(systemSymbolName: "sun.max.fill", accessibilityDescription: "Enabled (Light)")
+        } else if disabledApp && !usesLightIcon {
+            statusItem.button?.image = NSImage(systemSymbolName: "xmark.circle.fill", accessibilityDescription: "Disabled (Dark)")
+        } else if disabledApp && usesLightIcon {
+            statusItem.button?.image = NSImage(systemSymbolName: "exclamationmark.circle.fill", accessibilityDescription: "Disabled (Light)")
         }
     }
     
@@ -199,12 +202,16 @@ class StatusMenuController: NSObject, NSMenuDelegate, NSWindowDelegate, MenuCont
     /// - Parameter sender: The object that sent the action.
     @IBAction func toggleApplicationState(_ sender: NSMenuItem) {
         let disabled = sender.state == .off
-        if disabled {
-            self.statusItem.image = AppManager.default.useLightIcon ? #imageLiteral(resourceName: "LighIconDisabled") : #imageLiteral(resourceName: "IconDisabled")
-        } else {
-            self.statusItem.image = AppManager.default.useLightIcon ? #imageLiteral(resourceName: "AppleMode") : #imageLiteral(resourceName: "IconAppleMode")
-        }
-        self.behaviorController.setApplicationIsEnabled(disabled)
+            if disabled {
+                statusItem.button?.image = AppManager.default.useLightIcon
+                    ? NSImage(systemSymbolName: "exclamationmark.circle.fill", accessibilityDescription: "Disabled (Light)")
+                    : NSImage(systemSymbolName: "xmark.circle.fill", accessibilityDescription: "Disabled (Dark)")
+            } else {
+                statusItem.button?.image = AppManager.default.useLightIcon
+                    ? NSImage(systemSymbolName: "sun.max.fill", accessibilityDescription: "Enabled (Light)")
+                    : NSImage(systemSymbolName: "star.fill", accessibilityDescription: "Enabled (Dark)")
+            }
+            self.behaviorController.setApplicationIsEnabled(disabled)
     }
     
     /// Terminate the application.

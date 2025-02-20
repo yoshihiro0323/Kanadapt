@@ -183,16 +183,20 @@ class AppManager: BehaviorDidChangePoster {
         }
     }
     
+    
     /// Load the defaults.
     private func loadRules() {
-        if let rules: Set<Rule> = self.defaults.convertible(forKey: UserDefaultsKeyName.appRules.rawValue) {
-            self.rules = rules
-            self.behaviorDict = .init(uniqueKeysWithValues: rules.map { ($0.id, $0.behavior) })
+        if let defaultsSet: DefaultsSet<Rule> = self.defaults.convertible(forKey: UserDefaultsKeyName.appRules.rawValue) {
+            self.rules = defaultsSet.value
+            self.behaviorDict = .init(uniqueKeysWithValues: self.rules.map { ($0.id, $0.behavior) })
         }
     }
     
     /// Synchronize and write the defaults from altered data held by this `BehaviorManager` instance.
     private func synchronizeRules() {
-        self.defaults.set(self.rules, forKey: UserDefaultsKeyName.appRules.rawValue)
+        let defaultsSet = DefaultsSet(value: self.rules)
+        self.defaults.set(defaultsSet, forKey: UserDefaultsKeyName.appRules.rawValue)
     }
+
 }
+

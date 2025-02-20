@@ -101,3 +101,4 @@ final class Rule: Item, UserDefaultsConvertible {
         return Rule(id: id, url: url, behavior: behavior)
     }
 }
+
