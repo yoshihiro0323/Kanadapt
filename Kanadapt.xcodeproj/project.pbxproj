@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18413B8D2D6702AA008B364A /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 18413B8C2D6702AA008B364A /* Sparkle */; };
 		3F0A2A302014BA11009F9610 /* RunningAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A2A2F2014BA11009F9610 /* RunningAppsViewController.swift */; };
 		3F0A2A332014BA2D009F9610 /* RunningApps.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A2A312014BA2D009F9610 /* RunningApps.storyboard */; };
 		3F15629C23FE892A00CD0773 /* MoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15629B23FE892A00CD0773 /* MoverImageView.swift */; };
@@ -42,8 +43,6 @@
 		3F8F93BB1EEAC9B900FCE91F /* RuleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F93BA1EEAC9B900FCE91F /* RuleCellView.swift */; };
 		3F8F93BD1EEAF1EB00FCE91F /* RuleValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F93BC1EEAF1EB00FCE91F /* RuleValueTransformer.swift */; };
 		3F9EDD2A245C7BAF0047D1AC /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9EDD29245C7BAF0047D1AC /* MenuItemView.swift */; };
-		3FBE4C262222A3C600782647 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE4C202222A22200782647 /* Sparkle.framework */; };
-		3FBE4C272222A3C600782647 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBE4C202222A22200782647 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3FBE4C292222AB0200782647 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3FBE4C282222AB0200782647 /* dsa_pub.pem */; };
 		3FC44EFA1D7F169A0065D433 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC44EF91D7F169A0065D433 /* Enums.swift */; };
 		3FC44EFC1D7F16CB0065D433 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC44EFB1D7F16CB0065D433 /* Items.swift */; };
@@ -68,20 +67,6 @@
 		3FF655CA20751D1600C8D2FC /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF655C820751D1600C8D2FC /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		3FBE4C252222A25200782647 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3FBE4C272222A3C600782647 /* Sparkle.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		3DF3612324C206AD00231BF5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		3DF3612424C206AD00231BF5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/RunningApps.strings"; sourceTree = "<group>"; };
@@ -91,7 +76,7 @@
 		3DF3612824C206AD00231BF5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3F0A2A2F2014BA11009F9610 /* RunningAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningAppsViewController.swift; sourceTree = "<group>"; };
 		3F0A2A322014BA2D009F9610 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RunningApps.storyboard; sourceTree = "<group>"; };
-		3F0E64141D8A8A59003243FE /* Fluor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fluor-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F0E64141D8A8A59003243FE /* Kanadapt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kanadapt-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F15629B23FE892A00CD0773 /* MoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoverImageView.swift; sourceTree = "<group>"; };
 		3F16ECDE23EC459F008BC89A /* ResultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultExtension.swift; sourceTree = "<group>"; };
 		3F16ECE023EDDF66008BC89A /* SetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExtension.swift; sourceTree = "<group>"; };
@@ -105,7 +90,7 @@
 		3F2FA4021D7A059F003E2AD8 /* CurrentAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentAppViewController.swift; sourceTree = "<group>"; };
 		3F2FA4041D7A1F87003E2AD8 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		3F3433331E50C53A009F4D86 /* ReleaseNotes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ReleaseNotes.rtf; sourceTree = "<group>"; };
-		3F3CFB4322131B5E00002089 /* Fluor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fluor.entitlements; sourceTree = "<group>"; };
+		3F3CFB4322131B5E00002089 /* Kanadapt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kanadapt.entitlements; sourceTree = "<group>"; };
 		3F4ABD0D201937B30075B178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RulesEditor.storyboard; sourceTree = "<group>"; };
 		3F4ABD0F20193B8D0075B178 /* RulesEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesEditorViewController.swift; sourceTree = "<group>"; };
 		3F4E36C22111EF7A00CDCAA0 /* CheckableMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckableMenuItem.swift; sourceTree = "<group>"; };
@@ -126,11 +111,10 @@
 		3F8F93BA1EEAC9B900FCE91F /* RuleCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleCellView.swift; sourceTree = "<group>"; };
 		3F8F93BC1EEAF1EB00FCE91F /* RuleValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleValueTransformer.swift; sourceTree = "<group>"; };
 		3F9EDD29245C7BAF0047D1AC /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
-		3FBE4C202222A22200782647 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../../../../pyroh/Dev/Projects/Fluor/Fluor/Sparkle.framework; sourceTree = "<group>"; };
 		3FBE4C282222AB0200782647 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		3FC44EF91D7F169A0065D433 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		3FC44EFB1D7F16CB0065D433 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
-		3FCD16A11D79793600C57B22 /* Fluor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCD16A11D79793600C57B22 /* Kanadapt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanadapt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD16A41D79793600C57B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FCD16A61D79793600C57B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FCD16A91D79793600C57B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -163,9 +147,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18413B8D2D6702AA008B364A /* Sparkle in Frameworks */,
 				3FE7B6DB245DF8450027DB39 /* SmoothOperators in Frameworks */,
 				3F16ECDD23E9D1AC008BC89A /* DefaultsWrapper in Frameworks */,
-				3FBE4C262222A3C600782647 /* Sparkle.framework in Frameworks */,
 				3F15629F23FEDD0000CD0773 /* CoreGeometry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +263,6 @@
 		3F7291EC2025BD1E005C9B70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3FBE4C202222A22200782647 /* Sparkle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,7 +270,7 @@
 		3FCD16981D79793600C57B22 = {
 			isa = PBXGroup;
 			children = (
-				3FCD16A31D79793600C57B22 /* Fluor */,
+				3FCD16A31D79793600C57B22 /* Kanadapt */,
 				3F7291EC2025BD1E005C9B70 /* Frameworks */,
 				3FCD16A21D79793600C57B22 /* Products */,
 			);
@@ -296,15 +279,15 @@
 		3FCD16A21D79793600C57B22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3FCD16A11D79793600C57B22 /* Fluor.app */,
+				3FCD16A11D79793600C57B22 /* Kanadapt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3FCD16A31D79793600C57B22 /* Fluor */ = {
+		3FCD16A31D79793600C57B22 /* Kanadapt */ = {
 			isa = PBXGroup;
 			children = (
-				3F3CFB4322131B5E00002089 /* Fluor.entitlements */,
+				3F3CFB4322131B5E00002089 /* Kanadapt.entitlements */,
 				3F4C5CB22019449B006CC84A /* Extensions */,
 				3F4C5CB12019444B006CC84A /* Protocols */,
 				3F4ABD13201941820075B178 /* Models */,
@@ -316,11 +299,11 @@
 				3F3433331E50C53A009F4D86 /* ReleaseNotes.rtf */,
 				3FE7B6CB245DC6180027DB39 /* Localizable.strings */,
 				3FCD16AB1D79793600C57B22 /* Info.plist */,
-				3F0E64141D8A8A59003243FE /* Fluor-Bridging-Header.h */,
+				3F0E64141D8A8A59003243FE /* Kanadapt-Bridging-Header.h */,
 				3FBE4C282222AB0200782647 /* dsa_pub.pem */,
 				3FE784E02053D455007F6200 /* README.md */,
 			);
-			path = Fluor;
+			path = Kanadapt;
 			sourceTree = "<group>";
 		};
 		3FE7E0E71D7CBEC700DC754D /* XIBs */ = {
@@ -339,28 +322,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3FCD16A01D79793600C57B22 /* Fluor */ = {
+		3FCD16A01D79793600C57B22 /* Kanadapt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FCD16AE1D79793600C57B22 /* Build configuration list for PBXNativeTarget "Fluor" */;
+			buildConfigurationList = 3FCD16AE1D79793600C57B22 /* Build configuration list for PBXNativeTarget "Kanadapt" */;
 			buildPhases = (
 				3FCD169D1D79793600C57B22 /* Sources */,
 				3FCD169E1D79793600C57B22 /* Frameworks */,
 				3FCD169F1D79793600C57B22 /* Resources */,
-				3FD11B2F207A320800742415 /* Run Script */,
-				3FBE4C252222A25200782647 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Fluor;
+			name = Kanadapt;
 			packageProductDependencies = (
 				3F16ECDC23E9D1AC008BC89A /* DefaultsWrapper */,
 				3F15629E23FEDD0000CD0773 /* CoreGeometry */,
 				3FE7B6DA245DF8450027DB39 /* SmoothOperators */,
+				18413B8C2D6702AA008B364A /* Sparkle */,
 			);
 			productName = Fluor;
-			productReference = 3FCD16A11D79793600C57B22 /* Fluor.app */;
+			productReference = 3FCD16A11D79793600C57B22 /* Kanadapt.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -369,8 +351,9 @@
 		3FCD16991D79793600C57B22 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = Pyrolyse;
 				TargetAttributes = {
 					3FCD16A01D79793600C57B22 = {
@@ -388,7 +371,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3FCD169C1D79793600C57B22 /* Build configuration list for PBXProject "Fluor" */;
+			buildConfigurationList = 3FCD169C1D79793600C57B22 /* Build configuration list for PBXProject "Kanadapt" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -403,12 +386,13 @@
 				3F16ECDB23E9D1AC008BC89A /* XCRemoteSwiftPackageReference "DefaultsWrapper" */,
 				3F15629D23FEDD0000CD0773 /* XCRemoteSwiftPackageReference "CoreGeometry" */,
 				3FE7B6D9245DF8450027DB39 /* XCRemoteSwiftPackageReference "SmoothOperators" */,
+				18413B8B2D6702AA008B364A /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			productRefGroup = 3FCD16A21D79793600C57B22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3FCD16A01D79793600C57B22 /* Fluor */,
+				3FCD16A01D79793600C57B22 /* Kanadapt */,
 			);
 		};
 /* End PBXProject section */
@@ -433,23 +417,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3FD11B2F207A320800742415 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FCD169D1D79793600C57B22 /* Sources */ = {
@@ -601,6 +568,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -609,9 +577,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -661,6 +631,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -669,9 +640,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -694,28 +667,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Fluor/Fluor.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Kanadapt/Kanadapt.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = Q2E884V952;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = VK3A8K6V82;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fluor",
 				);
-				INFOPLIST_FILE = Fluor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Kanadapt/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2.5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pyrolyse.Fluor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.komiyajapan.Kanadapt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Fluor/Fluor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kanadapt/Kanadapt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
@@ -728,30 +704,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Fluor/Fluor.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Kanadapt/Kanadapt.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = Q2E884V952;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = VK3A8K6V82;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fluor",
 				);
-				INFOPLIST_FILE = Fluor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Kanadapt/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2.5.0;
 				OTHER_SWIFT_FLAGS = "-DRELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pyrolyse.Fluor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.komiyajapan.Kanadapt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Fluor/Fluor-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kanadapt/Kanadapt-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -761,7 +740,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FCD169C1D79793600C57B22 /* Build configuration list for PBXProject "Fluor" */ = {
+		3FCD169C1D79793600C57B22 /* Build configuration list for PBXProject "Kanadapt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FCD16AC1D79793600C57B22 /* Debug */,
@@ -770,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FCD16AE1D79793600C57B22 /* Build configuration list for PBXNativeTarget "Fluor" */ = {
+		3FCD16AE1D79793600C57B22 /* Build configuration list for PBXNativeTarget "Kanadapt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3FCD16AF1D79793600C57B22 /* Debug */,
@@ -782,6 +761,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		18413B8B2D6702AA008B364A /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.4;
+			};
+		};
 		3F15629D23FEDD0000CD0773 /* XCRemoteSwiftPackageReference "CoreGeometry" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitlab.com/Pyroh/CoreGeometry.git";
@@ -809,6 +796,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		18413B8C2D6702AA008B364A /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18413B8B2D6702AA008B364A /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
 		3F15629E23FEDD0000CD0773 /* CoreGeometry */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3F15629D23FEDD0000CD0773 /* XCRemoteSwiftPackageReference "CoreGeometry" */;

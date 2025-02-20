@@ -1,0 +1,42 @@
+{
+  "originHash" : "1d8d95d35f3230956bd7a8bfab4cf098f379a1b5f90c78671925d42a7b9c2fca",
+  "pins" : [
+    {
+      "identity" : "coregeometry",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/Pyroh/CoreGeometry.git",
+      "state" : {
+        "revision" : "a59affa331972263980f8a2af4cfd5f37ad42d3d",
+        "version" : "3.0.0"
+      }
+    },
+    {
+      "identity" : "defaultswrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Pyroh/DefaultsWrapper.git",
+      "state" : {
+        "revision" : "ba13b973c1bec40ba1a3db5e05eaa4e2d07f124f",
+        "version" : "1.3.0"
+      }
+    },
+    {
+      "identity" : "smoothoperators",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Pyroh/SmoothOperators.git",
+      "state" : {
+        "revision" : "dd013309755d75d8636fd7fb89bb25da34b92c7e",
+        "version" : "0.20.0"
+      }
+    },
+    {
+      "identity" : "sparkle",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sparkle-project/Sparkle",
+      "state" : {
+        "revision" : "0ef1ee0220239b3776f433314515fd849025673f",
+        "version" : "2.6.4"
+      }
+    }
+  ],
+  "version" : 3
+}
