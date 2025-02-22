@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="269" height="27"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField wantsLayer="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoM-Ab-xgn">
+                <textField wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoM-Ab-xgn">
                     <rect key="frame" x="18" y="6" width="51" height="16"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" title="Trigger" id="AiN-Qo-Ikx">
                         <font key="font" metaFont="systemBold"/>
@@ -196,7 +196,7 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="YVc-AJ-uvN" customClass="MenuItemView" customModule="Kanadapt" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="269" height="27"/>
                     <subviews>
-                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvO-d4-urd">
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvO-d4-urd">
                             <rect key="frame" x="18" y="6" width="91" height="16"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default mode" id="S28-Jt-nN1">
                                 <font key="font" metaFont="systemBold"/>
@@ -270,7 +270,7 @@
                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mdq-3d-6c1">
                     <rect key="frame" x="92" y="17" width="157" height="38"/>
                     <subviews>
-                        <textField focusRingType="none" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" allowsExpansionToolTips="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmQ-wu-N8N">
+                        <textField horizontalHuggingPriority="251" horizontalCompressionResistancePriority="250" allowsExpansionToolTips="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmQ-wu-N8N">
                             <rect key="frame" x="-2" y="22" width="39" height="16"/>
                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Label" id="nND-dO-QEg">
                                 <font key="font" metaFont="systemSemibold" size="13"/>

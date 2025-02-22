@@ -21,7 +21,7 @@
                                     <nil key="toolTip"/>
                                     <size key="minSize" width="80" height="22"/>
                                     <size key="maxSize" width="10000" height="22"/>
-                                    <searchField key="view" wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" textCompletion="NO" id="UHq-JH-zfh">
+                                    <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" id="UHq-JH-zfh">
                                         <rect key="frame" x="0.0" y="14" width="131" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="kPV-xA-Pus">
@@ -112,7 +112,7 @@
                                                                                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="THv-MJ-WeH">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="205" height="42"/>
                                                                                     <subviews>
-                                                                                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ril-YN-HJ5">
+                                                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ril-YN-HJ5">
                                                                                             <rect key="frame" x="-2" y="26" width="39" height="16"/>
                                                                                             <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Label" id="b56-33-3LM">
                                                                                                 <font key="font" metaFont="systemSemibold" size="13"/>
@@ -226,7 +226,7 @@
                                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-Fv-tue">
                                         <rect key="frame" x="0.0" y="23" width="340" height="5"/>
                                     </box>
-                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kDJ-2C-TWd" userLabel="StatusBarLabel">
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kDJ-2C-TWd" userLabel="StatusBarLabel">
                                         <rect key="frame" x="154" y="6" width="33" height="14"/>
                                         <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Twm-uj-Z9c">
                                             <font key="font" metaFont="menu" size="11"/>
